@@ -15,10 +15,7 @@ ul, li {
   list-style: none; }
 
 a {
-  color: #3778ff;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
+  color: #3778ff; }
 
 .container {
   max-width: 560px;
@@ -30,6 +27,9 @@ a {
     padding-right: 20px; } }
 @media (max-width: 500px) {
   .wrapcontent {
+    margin-bottom: 10px; } }
+@media (max-width: 900px) {
+  .mb10 {
     margin-bottom: 10px; } }
 .highlight .c {
   color: #999988;
@@ -390,9 +390,13 @@ li {
   line-height: 1.45;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  color: rgba(71, 82, 93, 0.4); }
   .time a {
-    color: rgba(71, 82, 93, 0.4); }
+    text-decoration: inherit;
+    color: inherit; }
+    .time a:hover {
+      text-decoration: underline; }
 
 @media (max-width: 900px) {
   .minWidth900 {
@@ -437,12 +441,79 @@ li {
 .changelog-container {
   padding-top: 90px; }
 
-.newPost {
+.back {
   margin-bottom: 35px; }
-  .newPost a svg {
-    fill: #3778ff;
-    width: 20px;
-    margin-right: 7px; }
+  .back a {
+    text-decoration: inherit; }
+    .back a:hover {
+      text-decoration: underline; }
+    .back a svg {
+      fill: #3778ff;
+      width: 20px;
+      margin-right: 7px; }
+
+@media (max-width: 560px) {
+  .back {
+    margin-left: 20px;
+    margin-right: 20px; } }
+.logchimp {
+  display: flex;
+  flex-direction: column; }
+  .logchimp-heading {
+    padding: 12px 0;
+    text-align: center;
+    border-bottom: 1px solid #f1f1f1;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    top: 0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px; }
+  .logchimp-item {
+    display: flex;
+    padding: 7px 16px;
+    flex-direction: row;
+    color: #666;
+    font-size: 13px;
+    flex-wrap: wrap;
+    text-decoration: inherit; }
+    .logchimp-item:hover .logchimp-item-description {
+      text-decoration: underline; }
+    .logchimp-item:first-child {
+      padding-top: 12px; }
+    .logchimp-item:last-child {
+      padding-bottom: 12px; }
+    .logchimp-item-category {
+      border-radius: 10px;
+      color: #ffffff;
+      font-size: 11px;
+      padding: 2px 6px;
+      margin-right: 5px; }
+    .logchimp-item-title {
+      color: #222c36;
+      font-weight: 500;
+      margin-right: 5px; }
+    .logchimp-item-description {
+      line-height: 18px; }
+  .logchimp-seemore {
+    background: #fcfcfc;
+    color: #a8a8a8;
+    font-size: 12px;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #f1f1f1;
+    margin-top: auto;
+    bottom: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px; }
+    .logchimp-seemore a {
+      color: #a8a8a8;
+      text-decoration: underline; }
+  .logchimp-heading, .logchimp-seemore {
+    position: sticky; }
+
+html, body, .logchimp {
+  height: 100%; }
 
 @font-face {
   font-family: "Graphik Web";
