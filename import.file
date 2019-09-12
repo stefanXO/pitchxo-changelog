@@ -1,0 +1,221 @@
+title: Add your new leads to Pipedrive CRM automatically
+date: 2018-11-24 06:11:00
+category: New
+
+
+---
+With the new <strong>Pipedrive CRM</strong> connector, you can automatically add new leads to your Pipedrive pipelines!</p>
+<p>Once they log in again, we'll be adding <strong>deal notes</strong> to the existing pipeline boxes. This way you can keep track of your lead activity automatically within Pipedrive.</p>
+---
+===
+
+
+title: Get live updates within Slack
+date: 2018-11-22 05:30:00
+category: New
+---
+You can now receive live notifications of your lead activity from within Slack.</p>
+<p>Once a lead signs up, you'll also be able to directly approve or deny them directly within Slack without having to switch the app.</p>
+---
+===
+
+
+title: Push your leads to your Mailchimp email list
+date: 2018-11-17 06:38:00
+category: New
+---
+We have just released our new MailChimp integration. You can now directly catch your leads emails, and add them to your existing MailChimp lists once they sign up in your data room.</p>
+---
+===
+
+
+  
+
+
+  
+
+title: Override company details
+
+  
+date: 2018-11-12 06:38:00
+
+  
+category: New
+
+
+---
+You can now override company details on a data room basis. Normally when you create a data room, we will automatically display the company information from your billing account. Previously, if you changed this information, it would also be changed on all your data room.</p>
+<p>You can now override the displayed company details for every data room separately.</p>
+---
+===
+
+
+  
+
+
+  
+
+title: Data room unpublishing and deletion
+
+  
+date: 2018-10-25 09:30:00
+
+  
+category: New
+
+
+---
+We have just overhauled the data room overview, so it's easier to keep track of specific data room statistics, while still keeping an eye on all of them.</p>
+<p>Additionally you can now specifically either <code>unpublish</code> a data room - meaning it won't be available online any longer, but still live on in your administration.</p>
+<p>Or you can fully delete the data room, and all connected leads with it.</p>
+---
+===
+
+
+  
+
+
+  
+
+title: Duplicate existing data room settings or content
+
+  
+date: 2018-10-24 06:38:00
+
+  
+category: New
+
+
+---
+When creating a new data room, you can now duplicate the settings and/or content from another data room.</p>
+<p>This should make it simpler to quickly boot up a new data room, without having to configure everything from scratch.</p>
+---
+===
+
+
+  
+
+
+  
+
+title: Organize your Decks and Videos with Folders
+
+  
+date: 2018-10-02 15:00:00
+
+  
+category: New
+
+
+---
+Today we have rolled out a new feature to pitchXO : <strong>Folders</strong>. You can currently reach this feature from the quick menu in the top left corner under "<strong>Organize Folders</strong>"</p>
+<p>With folders you can now organize your decks and videos into your own structure, instead of having everything under "Decks" and "Videos".</p>
+<p>We're still testing this feature, so any feedback would be greatly appreciated!</p>
+---
+===
+
+
+  
+
+
+  
+
+title: Track the status of your outgoing invitations
+
+  
+date: 2018-07-30 06:11:00
+
+  
+category: Improvement
+
+
+---
+With the latest pitchXO update we have added a status field for your lead invitations. You will now be able to see if an email has been rejected by the lead’s email server, and for which reasons.</p>
+---
+===
+
+
+  
+
+
+  
+
+title: Faster publishing and percentage display
+
+  
+date: 2018-07-06 06:11:00
+
+  
+category: Improvement
+
+
+---
+With today’s quick update you’ll be able to publish your data rooms much more rapidly – and also you’ll be able to see the percentage of the progress.</p>
+<p>Further on with desktop notifications enabled, you’ll receive a desktop notification once your data room has been successfully published.</p>
+---
+===
+
+
+  
+
+
+  
+
+title: Email whitelists
+
+  
+date: 2018-03-25 11:36:00
+
+  
+category: New
+
+
+---
+Today we've added a new feature : <strong>Email whitelists</strong>. With email whitelists you can set rules in <strong>pitchXO</strong>, which allow to fine-grain which of your leads should be auto-approved automatically.</p>
+<p>This is an easy way to whitelist whole company segments of your leads, so they don't have to wait up for manual approval.</p>
+<p>E.g. if you're sharing your data room with a client called <code>Investment Bank</code>, you'd add an entry for <code>*@investmentbank.com</code> to your whitelist filters.</p>
+<p>Now any new leads that would sign up with their <code>name@investmentbank.com</code> email would be automatically approved and could see your data room right away.</p>
+<p>We hope this helps you in reducing friction when sharing secured content with your leads. </p>
+---
+===
+
+
+  
+
+
+  
+  
+
+title: You can now disable PIN confirmations for email logins
+
+  
+date: 2018-03-23 11:36:00
+
+  
+category: Improvement
+
+
+---
+Yet another update to pitchXO's <strong>email login</strong> functionality : </p>
+<p>When a lead logs in with their email address, we usually send them a <strong>PIN number</strong> to their email address, so we can make sure the lead actually owns the email address they logged in with.</p>
+<p>Today we've added a <strong>switch</strong> to <strong>disable this PIN check</strong>. You might want to use this in cases where only you share the landing page with a selected few people and trust them to use their proper email addresses.</p>
+<p><strong>Please note : Disabling the PIN confirmation is a security risk, however it reduces the sign up friction for high valued leads.</strong></p>
+<p>We do not recommend to disable the PIN confirmation on publicly linked landing pages, like your main investor page.</p>
+---
+===
+
+
+
+title: Add Downloads to your Data Room
+date: 2018-03-21 11:33:00
+category: New
+
+---
+We have just released the Download Center.</p>
+<p>You can now upload a variety of documents to your landing page which your leads can download securely after logging in.</p>
+<p>Security wise each download request creates a unique link for the user, which expires after a few seconds - so the download links cannot be shared easily.</p>
+<p>You will also see which files your leads downloaded in your lead email report.</p>
+<p>Please note that once a file is downloaded, access control is out of your reach of course.</p>
+---
+===
+
