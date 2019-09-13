@@ -49,15 +49,6 @@ Object.assign(LC_iframe.style, LC_styles);
 LC_iframe.style.setProperty ("border-radius", "6px", "important");
 LC_iframe.frameBorder = '0'
 
-if(!!LC_config.callbacks) {
-	if(!!LC_config.callbacks.onShowDetails) {
-		$('a.logchimp-item').on('click', LC_config.callbacks.onShowDetails);
-	}
-	if(!!LC_config.callbacks.onReadMore) {
-		$('.logchimp-seemore a').on('click', LC_config.callbacks.onReadMore);
-	}
-}
-
 // Toggle widget
 // const LC_trigger = document.getElementById(LC_config.trigger)
 // LC_trigger.setAttribute('onclick', 'LC_Widget_Launch()')
