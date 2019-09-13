@@ -1,9 +1,3 @@
-var LC_config = {
-	selector: "changelogcontent", // CSS ID selector where to inject the widget
-	url: "https://changelog.pitchxo.com", // link to your changelog
-	trigger: "navchangeloglink" // Selector ID for widget to open.
-};
-
 // Users Data
 console.log(LC_config.selector)
 console.log(LC_config.url)
@@ -25,7 +19,7 @@ LC_placeholder.appendChild(LC_iframe)
 
 const LC_cont_styles = {
 	backgroundColor: '#fff',
-	minHeight: '508px',
+	minHeight: '558px',
 	minWidth: '348px',
 	border: 0,
 	boxShadow: '0 0 1px rgba(99, 114, 130, 0.32), 0 8px 16px rgba(27, 39, 51, 0.08)',
@@ -54,6 +48,15 @@ const LC_styles = {
 Object.assign(LC_iframe.style, LC_styles);
 LC_iframe.style.setProperty ("border-radius", "6px", "important");
 LC_iframe.frameBorder = '0'
+
+if(!!LC_config.callbacks) {
+	if(!!LC_config.callbacks.onShowDetails) {
+		$('a.logchimp-item').on('click', LC_config.callbacks.onShowDetails);
+	}
+	if(!!LC_config.callbacks.onReadMore) {
+		$('.logchimp-seemore a').on('click', LC_config.callbacks.onReadMore);
+	}
+}
 
 // Toggle widget
 // const LC_trigger = document.getElementById(LC_config.trigger)
