@@ -1,3 +1,9 @@
+var LC_config = {
+	selector: "changelogcontent", // CSS ID selector where to inject the widget
+	url: "https://changelog.pitchxo.com", // link to your changelog
+	trigger: "navchangeloglink" // Selector ID for widget to open.
+};
+
 // Users Data
 console.log(LC_config.selector)
 console.log(LC_config.url)
@@ -17,25 +23,42 @@ var LC_iframe = document.createElement('iframe')
 LC_iframe.src = LC_Widget_Url
 LC_placeholder.appendChild(LC_iframe)
 
+const LC_cont_styles = {
+	backgroundColor: '#fff',
+	minHeight: '508px',
+	minWidth: '348px',
+	border: 0,
+	boxShadow: '0 0 1px rgba(99, 114, 130, 0.32), 0 8px 16px rgba(27, 39, 51, 0.08)',
+	willChange: 'height, margin-top, opacity',
+	transition: 'margin-top 0.15s ease-out, opacity 0.1s ease-out, height 0.3s ease-out'
+}
+
+const LC_parent = document.getElementById('navchangelog').getElementsByClassName('dropdown-menu')[0];
+Object.assign(LC_parent.style, LC_cont_styles)
+LC_parent.style.setProperty ("border-radius", "6px", "important");
+
 // Styles
 const LC_styles = {
-	borderRadius: '6px',
-	height: '308px',
-	boxShadow: '0 0 1px rgba(99,114,130,0.32), 0 8px 16px rgba(27,39,51,0.08)',
-	backgroundColor: '#fff',
+	height: '100%',
+	width: '100%',
 	position: 'absolute',
-	display: 'none',
-	marginTop: '10px'
+	top: 0,
+	bottom: 0,
+	border: 0,
+	margin: 0,
+	padding: 0,
+	transition: 'height 0.3s ease-out'
 }
 
 // Removing iframe border
-Object.assign(LC_iframe.style, LC_styles)
+Object.assign(LC_iframe.style, LC_styles);
+LC_iframe.style.setProperty ("border-radius", "6px", "important");
 LC_iframe.frameBorder = '0'
 
 // Toggle widget
-const LC_trigger = document.getElementById(LC_config.trigger)
-LC_trigger.setAttribute('onclick', 'LC_Widget_Launch()')
-function LC_Widget_Launch() {
-	LC_iframe.style.display =
-		LC_iframe.style.display === 'block' ? 'none' : 'block'
-}
+// const LC_trigger = document.getElementById(LC_config.trigger)
+// LC_trigger.setAttribute('onclick', 'LC_Widget_Launch()')
+// function LC_Widget_Launch() {
+// 	LC_iframe.style.display =
+// 		LC_iframe.style.display === 'block' ? 'none' : 'block'
+// }
